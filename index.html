@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <title>Search National Parks</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+
+            <body>
+                <section class="container">
+                    <h1>Find a National Park</h1>
+
+                    <form class="searchForm">
+                        <label>Enter State:</label>
+                        <input type="text" class="searchState" placeholder="AZ,UT,CO" required>
+                        <br>
+                        <label>How many Parks do you want?</label>
+                        <input type="number" class="maxHits" value="10">
+
+                        <input class="button" type="submit" value="submit">
+                    </form>
+
+                    <p class="apiError"></p>
+
+                    <section class="results hidden" role="region">
+                       <h2>Your Search Results</h2>
+                        <ul class="resultsList"></ul>
+                    </section>
+
+                </section>
+                <script src="index.js"></script>
+            </body>
+    </html>
